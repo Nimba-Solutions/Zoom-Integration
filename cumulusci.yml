@@ -1,0 +1,28 @@
+minimum_cumulusci_version: '3.78.0'
+project:
+    name: Zoom-Integration
+    package:
+        name: Zoom-Integration
+        api_version: '59.0'
+    git:
+        default_branch: 'main'
+        prefix_feature: 'feature/'
+        prefix_beta: 'beta/'
+        prefix_release: 'release/'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Zoom-Integration/tests
+            options:
+                outputdir: robot/Zoom-Integration/results
+
+    robot_testdoc:
+        options:
+            path: robot/Zoom-Integration/tests
+            output: robot/Zoom-Integration/doc/Zoom-Integration_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nimba_ZoomParticipantMeetingType__c</fullName>
+    <description>The meeting type
+0 — A prescheduled meeting.
+1 — An instant meeting.
+2 — A scheduled meeting.
+3 — A recurring meeting with no fixed time.
+4 — A personal meeting room.
+7 — A PAC (Personal Audio Conference) meeting.
+8 — A recurring meeting with a fixed time.</description>
+    <externalId>false</externalId>
+    <label>nimba_ZoomParticipantMeetingType</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
